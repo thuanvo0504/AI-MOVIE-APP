@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <!-- HEADER -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xin chào 👋"
+                android:textColor="@color/text_secondary"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="Khám phá phim hay"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="👤"
+            android:textSize="22sp"
+            android:background="@color/surface" />
+
+    </LinearLayout>
+
+
+    <!-- SEARCH -->
+
+    <EditText
+        android:id="@+id/edtSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="🔍  Tìm kiếm phim..."
+        android:padding="14dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/text_secondary"
+        android:background="@color/surface" />
+
+
+    <!-- CONTENT -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- ĐANG CHIẾU -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="25dp"
+                android:text="Đang chiếu"
+                android:textColor="@color/white"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerMovies"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:clipToPadding="false" />
+
+
+            <!-- SẮP CHIẾU -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="25dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Sắp chiếu"
+                    android:textColor="@color/white"
+                    android:textSize="21sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/btnViewUpcoming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Xem tất cả ›"
+                    android:textColor="@color/primary"
+                    android:textSize="13sp"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerUpcoming"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="15dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:clipToPadding="false" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <!-- BOTTOM NAV -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:background="@color/surface">
+
+        <!-- HOME -->
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌂&#10;Trang chủ"
+            android:textColor="@color/primary"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- UPCOMING -->
+
+        <TextView
+            android:id="@+id/navUpcoming"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🎬&#10;Sắp chiếu"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- SEARCH -->
+
+        <TextView
+            android:id="@+id/navSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌕&#10;Tìm kiếm"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- TICKET -->
+
+        <TextView
+            android:id="@+id/navTicket"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🎟&#10;Vé"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- CHAT -->
+
+        <TextView
+            android:id="@+id/navChatbot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="🤖&#10;Tư vấn"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <!-- ACCOUNT -->
+
+        <TextView
+            android:id="@+id/navAccount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="👤&#10;Tài khoản"
+            android:textColor="@color/text_secondary"
+            android:textSize="10sp"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+</LinearLayout>

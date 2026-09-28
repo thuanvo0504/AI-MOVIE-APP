@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07080C"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="30dp">
+
+
+        <!-- ================================ -->
+        <!-- TIÊU ĐỀ -->
+        <!-- ================================ -->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn suất chiếu"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+
+        <!-- ================================ -->
+        <!-- CHỌN RẠP -->
+        <!-- ================================ -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Chọn rạp"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <RadioGroup
+            android:id="@+id/rgCinema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+
+            <RadioButton
+                android:id="@+id/rbCgv"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:buttonTint="#FFC107"
+                android:checked="true"
+                android:text="CGV Vincom"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+
+            <RadioButton
+                android:id="@+id/rbLotte"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:buttonTint="#FFC107"
+                android:text="Lotte Cinema"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+
+            <RadioButton
+                android:id="@+id/rbGalaxy"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:buttonTint="#FFC107"
+                android:text="Galaxy Cinema"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </RadioGroup>
+
+
+        <!-- ================================ -->
+        <!-- CHỌN NGÀY -->
+        <!-- ================================ -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Chọn ngày"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvEmptyDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Đang tải ngày chiếu..."
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/layoutDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+
+        </HorizontalScrollView>
+
+
+        <!-- ================================ -->
+        <!-- CHỌN GIỜ -->
+        <!-- ================================ -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Chọn suất chiếu"
+            android:textColor="#FFFFFF"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tvEmptyTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Vui lòng chọn ngày"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/scrollTimes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:id="@+id/layoutTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+
+
+        </HorizontalScrollView>
+
+
+        <!-- ================================ -->
+        <!-- NÚT TIẾP TỤC -->
+        <!-- ================================ -->
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="35dp"
+            android:backgroundTint="#FFC107"
+            android:enabled="false"
+            android:text="TIẾP TỤC CHỌN GHẾ"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

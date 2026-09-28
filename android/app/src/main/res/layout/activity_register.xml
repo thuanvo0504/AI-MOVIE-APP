@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#07080C"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="28dp"
+        android:paddingTop="45dp"
+        android:paddingEnd="28dp"
+        android:paddingBottom="35dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TẠO TÀI KHOẢN"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Đăng ký để đặt vé xem phim"
+            android:textColor="#AAAAAA"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/edtFullName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="35dp"
+            android:hint="Họ và tên"
+            android:inputType="textPersonName"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:backgroundTint="#FFC107" />
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:backgroundTint="#FFC107" />
+
+        <EditText
+            android:id="@+id/edtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="Số điện thoại (không bắt buộc)"
+            android:inputType="phone"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:backgroundTint="#FFC107" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:backgroundTint="#FFC107" />
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="15dp"
+            android:hint="Xác nhận mật khẩu"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#777777"
+            android:backgroundTint="#FFC107" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#FFC107"
+            android:text="ĐĂNG KÝ"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvBackLogin"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Đã có tài khoản? Đăng nhập"
+            android:textColor="#FFC107"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

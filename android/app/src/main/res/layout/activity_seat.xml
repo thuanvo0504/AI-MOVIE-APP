@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chọn ghế"
+            android:textColor="@color/white"
+            android:textSize="26sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:text="MÀN HÌNH"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:background="@color/primary"/>
+
+        <GridLayout
+            android:id="@+id/seatGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:columnCount="6"
+            android:rowCount="6"
+            android:alignmentMode="alignMargins"
+            android:useDefaultMargins="true"/>
+
+        <TextView
+            android:id="@+id/txtSelectedSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Ghế đã chọn: Chưa chọn"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/txtTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Tổng tiền: 0đ"
+            android:textColor="@color/primary"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btnPayment"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="25dp"
+            android:text="Tiếp tục thanh toán"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:backgroundTint="@color/primary"/>
+
+    </LinearLayout>
+
+</ScrollView>
